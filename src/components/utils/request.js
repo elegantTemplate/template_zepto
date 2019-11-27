@@ -1,7 +1,7 @@
 import $ from 'webpack-zepto'
 
 export default (url, type = 'GET', data) => {
-    return new Promise((resolve, reject) => {
+    return new Promise(resolve => {
         $.ajax({
             url,
             type,
@@ -11,9 +11,6 @@ export default (url, type = 'GET', data) => {
             xhrFields: {
                 withCredentials: true
               },
-            beforeSend() {
-
-            },
             success(data) {
                 resolve(data)
             }

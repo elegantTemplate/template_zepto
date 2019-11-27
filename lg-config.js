@@ -1,5 +1,6 @@
 module.exports = {
     projectElement: 'multiple',
+    useEslint: true,
     dev: {
         devServer_config: {
             contentBase: './dist',
