@@ -3,7 +3,7 @@ import './index.scss'
 
 import { test } from '../../components/utils/api'
 
-test().then(res => {
-    console.log(res)
+test().then(result => {
+    console.log(result)
 })
 
